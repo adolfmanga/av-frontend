@@ -1,11 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+/*reset*/
 *{ margin: 0;
 padding: 0;
 box-sizing: border-box;}
+/*reset*/
 
 .red {
     color: red;
     font-family: "Rock Salt", cursive;
 }
 
+.main-header {
+    background-image:url(background-image.png);
+    background-position:50% 39% ;/*alinhamento nos eixos x e y*/
+    display: flex;  /* colocar elementos centralizados */
+    flex-direction: column; /*alinhar elementos em baixo um do outro*/
+    align-items: center; /*centralizar elementos*/
+}
+
+.main-nav {
+width: 100%; /*cupar toda area disponivel*/
+max-width: 600px; /*travar a largura maxima em definir para objetos*/
+padding: 0 16px; /*primerio é cima  e baixo, segundo é esquerda e direita*/
+
+}
+
+.header-list-container {
+    display: flex;
+    justify-content: space-between; /*espaçamento entre itens*/
+    align-items: center;
+    padding: 16px 0;
+}
+
+.nav-item {
+    list-style: none;
+text-transform: uppercase; /*transformar letras em maiúsculas*/
+color:#00008B ;
+}
+
+.nav-item a {
+  text-decoration: none;/**/
+  color: inherit; /*herda a cor do pai()nsv item*/
+}
+
+.nav-item :hover{
+
+    color:rgba(0 , 0 , 139 , 0.7);
+}
+
+hr {
+    width: 100%;
+}
