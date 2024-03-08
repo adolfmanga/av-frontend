@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&family=Rock+Salt&display=swap');
 
 /*reset*/
+
 *{ margin: 0;
 padding: 0;
 box-sizing: border-box;}
@@ -45,10 +46,36 @@ color:#00008B ;
 }
 
 .nav-item :hover{
-
+transition: 0.2s; /*atrasar o tempo que a cor muda*/
     color:rgba(0 , 0 , 139 , 0.7);
 }
 
 hr {
     width: 100%;
+}
+
+.main-about {
+    padding: 40px 0 64px;
+}
+
+.container {
+    max-width: 600px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.about-title {
+    font-family: "Raleway", sans-serif; /*pega a fonte importada, caso não encontre utiliza a sans-serif (padrão)*/
+font-size: 32px;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 24px;
+}
+
+.about-image {
+    float:left; /*alinha a imagem a esquerda*/
+    margin: 0 20x 10px 0;
+    /*diminuir o tamanho das imagens */
+    width: 200px;/*largura*/
+    height: auto;/*altura, evita a distorção das imagens*/
+    
 }
