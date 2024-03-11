@@ -5,7 +5,21 @@
 *{ margin: 0;
 padding: 0;
 box-sizing: border-box;}
+
+li{
+    list-style: none;
+}
 /*reset*/
+
+:root {
+    --blue: #00008B;
+    --gray: #555555;
+    --skyblue: #00bFFF;
+    --silver: #c0c0c0;
+    --red: #ff0000;
+    ---white: #ffffff;
+    --darkgray: #959595;
+}
 
 .red {
     color: red;
@@ -35,7 +49,6 @@ padding: 0 16px; /*primerio é cima  e baixo, segundo é esquerda e direita*/
 }
 
 .nav-item {
-    list-style: none;
 text-transform: uppercase; /*transformar letras em maiúsculas*/
 color:#00008B ;
 }
@@ -47,7 +60,7 @@ color:#00008B ;
 
 .nav-item :hover{
 transition: 0.2s; /*atrasar o tempo que a cor muda*/
-    color:rgba(0 , 0 , 139 , 0.7);
+    color:#00008bb3;
 }
 
 hr {
@@ -77,5 +90,44 @@ margin-bottom: 24px;
     /*diminuir o tamanho das imagens */
     width: 200px;/*largura*/
     height: auto;/*altura, evita a distorção das imagens*/
-    
+}
+
+.about-description {
+color: var(--blue) ; /*utiliza variavel de cor criado anteiormente*/
+text-align: justify; /*justifica o texto*/
+}
+
+/*Footer*/
+
+.main-footer{
+    background-color: var(--skyblue); /*cor do fundo*/
+padding: 15px 0;/*espaçamento cima/baixo, esquerda/direita*/
+}
+
+.main-footer-container{
+
+    display: flex; /*deixar tudo na mesma linha*/
+    align-items: center;/*alinha itens no centro*/
+    justify-content: space-between;/*coloca nome de ladoa lista de conteudo*/
+}
+
+.title-smaller {
+    font-family: "Relaway", sans-serif; /*importa a fonte*/
+    font-size: 26px; /*aumenta o tamanho das letras*/
+color: var(--blue); /*aplica cor de acordo com a variavel*/
+}
+.list-container {
+    display: flex;/*deixar tudo na mesma linha*/
+align-items: center;/*alinha itens no centro*/
+justify-content: space-between;/*coloca nome de ladoa lista de conteudo*/
+}
+
+.footer-item {
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;/*espaçamento cima/baixo, esquerda/direita*/
+}
+
+.footer-item + .footer-item {
+    margin-left: 16px; /*aplica a mesma class seguindo em diante, ate chegar no fim*/
 }
