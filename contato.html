@@ -18,109 +18,109 @@
 <!--area do site-->
 <body>
     <!-- header: cabeçalho-->
-    <header>
+    <header class="main-header">
 
         <!-- nav: navegação-->
-        <nav>
+        <nav class="main-nav container">
             <!--lista não ordenada-->
-            <ul>
+            <ul class="header-list-container">
                 <!-- li: itens na lista-->
                 <!--a: ancora-->
 
-                <li> <!--logotipo do site--> 
+                <li class="nav-item"> <!--logotipo do site--> 
                     <a href="index.html">
                         <img src="images/logo.png" alt="logo" height="100" width="100">
                     </a>
                 </li>
 
-                <li>
+                <li class="nav-item">
                     <a href="loja.html">Loja</a>
                 </li>
 
-                <li>
+                <li class="nav-item">
                     <a href="contato.html">contato</a>
                 </li>
 
-                <li>
+                <li class="nav-item">
                     <a href="sobre.html">sobre</a>
                 </li>
    
             </ul>
 
         </nav>
+        <hr>
         <!--corpo do site-->
     </header>
 
-    <!--titulo principal-->
-    <h1>Seja Bem Vindo ao Maior Site de Vendas do Brasil</h1>
-
     <main>
 
-        <h2>Contato</h2>
-        <p>Os campos com * são preenchimento obrigátorio</p>
+        <h2 class="title-median">Contato </h2>
+        <p class="contact-text">Os campos com * são preenchimento obrigátorio</p>
 
         <!--Corpo de Formulário-->
-<form>
+<form class="contact">
 
 <!--Campo de Formulário-->
-            <label>
+            <label class="contact-label">
                 Nome*
-                <input type="texto" required>
+                <input class="contact-field" type="texto" required>
             </label>
 
-            <label>
+            <label class="contact-label">
                 Email*
-                <input type="email" required>
+                <input class="contact-field" type="email" required>
             </label>
 
-            <label>
+            <label class="contact-label">
                 Assunto*
-                <input>
-                <select>
+            
+                <select class="contact-field">
+                    <option>NewsLetter</option>
                     <option>Dúvidas</option>
                     <option>Sugestões</option>
                     <option>Críticas</option>
                 </select>
             </label>    
-                    <label>
+                    <label class="contact-label">
                     Mensagem*
-                    <textarea required></textarea>
+                    <textarea class="contact-field" required></textarea>
                     </label>
             
-                    <button type="button">Enviar</button>
+                    <button class="button-form" type="button">Enviar</button>
             
 </form>
-
+<div class="contact-maps">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10398.446081370359!2d-43.28225527540075!3d-22.861460694040705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997c7352b8f01f%3A0xdc43e9597c8e45ad!2sComplexo%20do%20Alem%C3%A3o%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1709729753039!5m2!1spt-BR!2sbr" 
 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
     </main>
 
 
    <!--rodapé do site-->
-   <footer class="rodape">
-    <div>
+   <footer class="main-footer">
+    <div class="footer-container">
 
-        <h3>Vendas Livres Store - Danilo Alan 2024</h3>
+        <h3 class="title-smaller">Vendas Livres Store - Danilo Alan 2024</h3>
 
-        <ul>
+        <ul class="footer-container">
 
-            <li>
+            <li class="footer-item">
                 <a href="https://www.facebook.com/"
                  target="_blank"><img src="images/facebook.svg" alt="facebook logo"></a>
-            </li>
+            </li">
 
-            <li>
+            <li class="footer-item" >
                 <a href="https://www.instagram.com/"
                  target="_blank"><img src="images/instagram.svg" alt="instagram logo"></a>
             </li>
 
-            <li>
+            <li class="footer-item">
                 <a href="https://www.spotfy.com/"
                  target="_blank"><img src="images/spotify.svg" alt="spotfy logo"></a>
             </li>
 
-            <li>
+            <li class="footer-item">
                 <a href="https://www.youtube.com/"
                  target="_blank"><img src="images/youtube.svg" alt="youtube logo"></a>
             </li>

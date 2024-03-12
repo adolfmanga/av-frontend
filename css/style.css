@@ -6,6 +6,13 @@
 padding: 0;
 box-sizing: border-box;}
 
+
+/*dar a fonte a todo body, com peso regular a 400 e tamanho 22px
+caso não tenha a fonte importada vai usar a secundaria*/
+body {
+    font: 400 22px "Roboto", sans-serif;
+}
+
 li{
     list-style: none;
 }
@@ -76,7 +83,7 @@ hr {
     padding: 0 16px;
     margin: 0 auto;
 }
-.about-title {
+.title-median {
     font-family: "Raleway", sans-serif; /*pega a fonte importada, caso não encontre utiliza a sans-serif (padrão)*/
 font-size: 32px;
 text-align: center;
@@ -104,7 +111,7 @@ text-align: justify; /*justifica o texto*/
 padding: 15px 0;/*espaçamento cima/baixo, esquerda/direita*/
 }
 
-.main-footer-container{
+.footer-container{
 
     display: flex; /*deixar tudo na mesma linha*/
     align-items: center;/*alinha itens no centro*/
@@ -116,11 +123,6 @@ padding: 15px 0;/*espaçamento cima/baixo, esquerda/direita*/
     font-size: 26px; /*aumenta o tamanho das letras*/
 color: var(--blue); /*aplica cor de acordo com a variavel*/
 }
-.list-container {
-    display: flex;/*deixar tudo na mesma linha*/
-align-items: center;/*alinha itens no centro*/
-justify-content: space-between;/*coloca nome de ladoa lista de conteudo*/
-}
 
 .footer-item {
     width: 50px;
@@ -130,4 +132,74 @@ justify-content: space-between;/*coloca nome de ladoa lista de conteudo*/
 
 .footer-item + .footer-item {
     margin-left: 16px; /*aplica a mesma class seguindo em diante, ate chegar no fim*/
+}
+
+
+
+
+/*CONTATO.HTML*/
+
+.contact-text {
+text-align: center;
+margin-bottom: 30px;
+font-size: 28px;
+color: var(--gray);
+}
+
+.contact {
+    background-color: var(--skyblue); /*cor do fundo do formulario*/
+    padding: 20px; /*espaçamento*/
+    max-width: 600px; /*tamanho definido para o projeto*/
+    margin-left: auto;/*empurra para a direita*/
+    margin-right: auto;/*empurra para a esquerda*/
+    margin-bottom: 20px;
+}
+
+.contact-label {
+
+display: block; /*coloca os elementos um em cima do outro */
+margin-bottom: 20px; /*espaçamento para baixo*/
+color: var(--blue);
+}
+
+.contact-field {
+    display: block; /*coloca os elementos um em cima do outro */
+width: 100%; /*ocupa o espaço maximo disponivel*/
+height: 30px; /*aumenta a altura do campo*/
+font-size: 16px; /*aumenta o tamanho da fonte*/
+padding-left: 10px; /*empurra o elemento para dentro do campo para a esquerda*/
+border: none;
+}
+
+.contact-field:focus { /*troca a cor de fundo da area do formulario*/
+    background-color: var(--silver); /*cor de fundo */
+    outline: none; /*remove a linha interna do formulario*/
+}
+
+textarea.contact-field {
+    height: 150px; /*altera a altura do campo*/
+    padding: 10px;/* dar espaçamento */
+    font-family: "Roboto",Calibri;
+}
+
+.button-form {
+background-color: var(--blue); /* cor de fundo*/
+color: var(---white); /*cor da fonte do botao*/
+border-radius: 10px;
+border: 2px solid var(--blue);
+padding: 2px 6px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.button-form:hover {
+background-color: var(---white);
+color: var(--blue);
+}
+
+.contact-maps {
+ max-width: 600px;
+ margin-left: auto;
+ margin-right: auto;
+ padding-bottom: 20spx;
 }
