@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&family=Rock+Salt&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&family=Rock+Salt&display=swap');
 /*reset*/
 
 *{ margin: 0;
@@ -185,11 +184,11 @@ textarea.contact-field {
 .button-form {
 background-color: var(--blue); /* cor de fundo*/
 color: var(---white); /*cor da fonte do botao*/
-border-radius: 10px;
+border-radius: 10px; /*curvatura*/
 border: 2px solid var(--blue);
-padding: 2px 6px;
+padding: 2px 6px; /*espaçamento*/
 font-weight: bold;
-cursor: pointer;
+cursor: pointer; /*muda a seta para a mao*/
 }
 
 .button-form:hover {
@@ -201,5 +200,44 @@ color: var(--blue);
  max-width: 600px;
  margin-left: auto;
  margin-right: auto;
- padding-bottom: 20spx;
+ padding-bottom: 20px;
 }
+
+
+/*index*/
+
+.title-header {
+    font-family: "Madimi One", cursive; /*fonte importadaa*/
+    color: var(--blue); /*cor da letra*/
+    font-size: 38px; /*tamanho*/
+    padding-bottom: 10px; /*espaçamento*/
+}
+
+.title-large {
+    font-family: "Rock Salt", cursive; /*fonte importada*/
+    font-size: 38px; /*tamango da fonte*/
+    color: var(--blue);
+    text-align: center;/*alinhar no centro*/
+}
+
+.description {
+    text-align: center;
+    color: var(--gray);
+    padding-bottom: 10px;
+}
+
+.emphasis {
+background-color: var(--skyblue);
+color: var(--blue);
+border-radius: 25px;
+text-align: center;
+}
+
+.product-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 40px;
+
+}
+
