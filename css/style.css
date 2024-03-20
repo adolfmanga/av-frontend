@@ -110,7 +110,14 @@ text-align: justify; /*justifica o texto*/
 padding: 15px 0;/*espaçamento cima/baixo, esquerda/direita*/
 }
 
-.footer-container{
+.list-container{
+
+    display: flex; /*deixar tudo na mesma linha*/
+    align-items: center;/*alinha itens no centro*/
+    justify-content: space-between;/*coloca nome de ladoa lista de conteudo*/
+}
+
+.main-footer-container{
 
     display: flex; /*deixar tudo na mesma linha*/
     align-items: center;/*alinha itens no centro*/
@@ -326,8 +333,8 @@ border: 2px solid var(--blue);
 }
 
 .product-qnt-input {
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
     border: 3px solid var(--blue);
     border-radius: 10px;
     background-color: var(--silver);
@@ -367,8 +374,35 @@ text-transform: uppercase;
 border: 0;
 font-weight: bold;
 margin: 24px auto 0;
+color: var(---white);
 }
 
 .purchase-button:hover {
     filter: brightness(0.8);
 }
+
+/*responsividade*/
+
+@media (max-width: 730px) {
+ .main-footer-container{   
+flex-direction:column;
+ }
+
+.product-container{
+        width: 320px;   
+}
+
+.cart-product-title{
+    margin-left: 0;
+}
+
+.title-header {
+    font-family: "Madimi One", cursive;
+    color: var(--blue);
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+}
+
+
