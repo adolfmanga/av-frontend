@@ -383,9 +383,19 @@ color: var(---white);
 
 /*responsividade*/
 
-@media (max-width: 730px) {
+@media (max-width: 825px){
+    .title-header{
+        font-size: 34px;
+
+    }
+}
+
+@media (max-width: 725px) {
  .main-footer-container{   
 flex-direction:column;
+ }
+ .title-median {
+    font-size: 30px;
  }
 
 .product-container{
@@ -403,6 +413,120 @@ flex-direction:column;
     padding-bottom: 10px;
 }
 
+.title-large {
+    font-family: "Rock Salt", cursive;
+    font-size: 28px;
+    color: var(--blue);
+    text-align: center;
 }
 
 
+}
+
+
+@media (max-width: 680px) {
+    .product-container{
+    justify-content: center;
+    }
+.title-median {
+        font-size: 27px;
+        padding: 4px;
+     }
+}
+
+
+@media(max-width: 600px){
+.title-large {
+    font-size: 24px;
+}
+}
+
+@media (max-width: 590px){
+    .product-identification{
+        flex-direction: column ;
+   }
+
+   .product-qnt-input {
+    
+   }
+}
+
+@media (max-width: 560px){
+
+.title-large {
+    font-size: 32px;
+}
+
+.title-median {
+    font-size: 21px;
+}
+
+}
+
+@media (max-width: 500px){
+
+.title-header {
+    font-size: 30px;
+}
+
+.title-large {
+    font-size: 26px;
+}
+.title-median {
+    font-size: 18px;
+}
+
+.title-smaller {
+    font-size: 22px;
+}
+
+}
+
+
+@media (max-width: 405px){
+
+    .nav-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-list-container {
+        font-size: 18px;
+    }
+    
+    .title-median {
+        font-size: 26px;
+    }
+    
+    .title-smaller {
+        font-size: 17px;
+    }
+   .product-container{ 
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .product-image {
+    width: 315px;
+}
+   .description {
+    font-size: 19px;
+   font-family: "Madimi One";
+   }
+
+   .emphasis {
+    font-size: 32px;
+}
+   
+    }
+    
+
+    @media (max-width: 405px) {
+        .about-image{
+            width: 160px;
+        }
+        .contact-text {
+            font-size: 25px;
+        }
+    }
