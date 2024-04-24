@@ -384,6 +384,19 @@ color: var(---white);
     filter: brightness(0.8);
 }
 
+.product-box{
+    border-radius: 5px;
+    margin-bottom:15px;
+    box-shadow: 3px 3px 5px 5px;
+}
+
+.logo-zoom {
+transition: transform0.3s ease;
+}
+
+.logo-zoom:hover{
+transform: scale(1.5);
+}
 /*responsividade*/
 
 @media (max-width: 825px){
@@ -448,10 +461,6 @@ flex-direction:column;
 @media (max-width: 590px){
     .product-identification{
         flex-direction: column ;
-   }
-
-   .product-qnt-input {
-    
    }
 }
 
