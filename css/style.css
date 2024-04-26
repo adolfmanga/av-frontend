@@ -397,6 +397,35 @@ transition: transform0.3s ease;
 .logo-zoom:hover{
 transform: scale(1.5);
 }
+
+.sub-itens{
+    display: none;
+    position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sub-itens a:hover {
+    text-decoration: none;
+    background-color: rgba(2, 225, 255, 0.705);
+    border-radius: 5px;
+    padding: 0px 3px;
+    color: var(--blue);
+}
+.nav-item:hover .sub-itens{
+display: block;
+}
+
+.sub-itens a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.sub-itens li{
+ margin-bottom: 5px;
+ }
+
+
 /*responsividade*/
 
 @media (max-width: 825px){
