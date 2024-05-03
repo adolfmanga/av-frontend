@@ -1,0 +1,10 @@
+
+    { 	background-color: var(--white);
+    	display: flex;
+    	justify-content: space-between;
+    	background-image: url(ray.jpg);
+    	background-size: 50% 80%;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	padding-bottom: 160px;
+				}
